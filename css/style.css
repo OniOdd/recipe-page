@@ -19,7 +19,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  border: none;
+  border: 0;
   font: inherit;
   color: inherit;
 }
@@ -51,11 +51,12 @@ body {
 }
 
 .hr {
+  height: 1px;
   margin-bottom: 26px;
-  border-top: 1px;
-  border-bottom: 0;
-  border-style: solid;
-  border-color: var(--light-grey);
+  background-color: var(--light-grey);
+}
+.hr--new-margin {
+  margin-bottom: 27px;
 }
 
 .omelette {
@@ -66,7 +67,7 @@ body {
   width: 100%;
 }
 .omelette__container {
-  padding: 40px 32px 42px;
+  padding: 40px 32px 29px;
 }
 .omelette__title {
   margin-bottom: 24px;
@@ -125,7 +126,7 @@ body {
 }
 
 .instructions {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 .instructions__title {
   margin-bottom: 16px;
@@ -168,4 +169,34 @@ body {
 }
 .instructions__li-6::before {
   content: "6.";
+}
+
+.nutrition__title {
+  margin-bottom: 15px;
+}
+.nutrition__desc {
+  margin-bottom: 12px;
+}
+.nutrition__table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.nutrition__table-tr:not(:last-child) {
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: var(--light-grey);
+}
+.nutrition__table-th {
+  padding-left: 32px;
+}
+.nutrition__table-td {
+  padding-right: 26px;
+  font-weight: 700;
+  color: var(--nutmeg);
+}
+.nutrition__table-th,
+.nutrition__table-td {
+  padding-top: 12px;
+  padding-bottom: 11px;
 }
