@@ -104,7 +104,7 @@ body {
 }
 .list__dot::before {
   position: absolute;
-  left: -15%;
+  left: -33px;
   top: 50%;
   transform: translateY(-50%);
   content: "•";
@@ -112,7 +112,7 @@ body {
   color: var(--dark-raspberry);
 }
 .list__dot--indent::before {
-  left: -12.3%;
+  left: -33px;
 }
 .list__dot--clr-brown::before {
   color: var(--nutmeg);
@@ -148,7 +148,7 @@ body {
 .instructions__li-5::before,
 .instructions__li-6::before {
   position: absolute;
-  left: -11.8%;
+  left: -32px;
   font-weight: 700;
   color: var(--nutmeg);
 }
@@ -199,4 +199,43 @@ body {
 .nutrition__table-td {
   padding-top: 12px;
   padding-bottom: 11px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 123px 15px 124px;
+    background-color: var(--eggshell);
+  }
+
+  .hr--new-margin {
+    margin-bottom: 26px;
+  }
+
+  .omelette {
+    width: 736px;
+    margin: 0 auto;
+    padding: 40px 40px 29px;
+    border-radius: 24px;
+  }
+  .omelette__image {
+    border-radius: 12px;
+  }
+  .omelette__container {
+    padding: 41px 0 0;
+  }
+  .omelette__title {
+    margin-bottom: 23px;
+    font-size: 2.5rem;
+  }
+
+  .preparation-time {
+    padding: 23px 28px 28px;
+  }
+
+  .nutrition__title {
+    margin-bottom: 16px;
+  }
+  .nutrition__table-td {
+    padding-right: 30.5px;
+  }
 }
